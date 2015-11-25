@@ -47,7 +47,7 @@ if ($metadata) {
 	echo $metadata;
 }
 if ($title_link) {
-	echo "<h3>$title_link</h3>";
+	echo "<h5 class='mrgn-tp-0'>$title_link</h3>";
 }
 echo "<div class=\"elgg-subtext\">$subtitle</div>";
 echo $tags;

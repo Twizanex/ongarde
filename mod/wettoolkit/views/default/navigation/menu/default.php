@@ -19,10 +19,14 @@ if (isset($vars['class'])) {
 	$class .= " {$vars['class']}";
 }
 
+if($vars['name'] == 'owner-block') {
+	$link_class = 'list-group-item list-group-item-panel';
+}
 foreach ($vars['menu'] as $section => $menu_items) {
 	echo elgg_view('navigation/menu/elements/section', array(
 		'items' => $menu_items,
 		'class' => "$class elgg-menu-{$vars['name']}-$section",
+		'link_class' => $link_class,
 		'section' => $section,
 		'name' => $vars['name'],
 		'show_section_headers' => $headers,

@@ -20,15 +20,7 @@ elgg_register_event_handler('init', 'system', 'hj_alive_init');
  * Initialize hypeAlive
  */
 function hj_alive_init() {
-
-	$plugin = 'hypeAlive';
-
-	$shortcuts = hj_path_shortcuts($plugin);
-	
-	elgg_register_classes($shortcuts['classes']);
-
-		hj_alive_search_init();
-
+	hj_alive_search_init();
 }
 
 /* ================================

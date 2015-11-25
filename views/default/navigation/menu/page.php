@@ -11,7 +11,7 @@
 
 $headers = elgg_extract('show_section_headers', $vars, false);
 
-$class = 'elgg-menu elgg-menu-page';
+$class = 'list-group';
 if (isset($vars['class'])) {
 	$class = "$class {$vars['class']}";
 }
@@ -28,6 +28,7 @@ if (isset($vars['selected_item'])) {
 foreach ($vars['menu'] as $section => $menu_items) {
 	echo elgg_view('navigation/menu/elements/section', array(
 		'items' => $menu_items,
+		'link_class' => 'list-group-item list-group-item-panel',
 		'class' => "$class elgg-menu-page-$section",
 		'section' => $section,
 		'name' => $vars['name'],

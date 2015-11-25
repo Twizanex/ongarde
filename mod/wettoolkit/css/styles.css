@@ -210,25 +210,23 @@
       padding: 2.25rem 10px; }
     #wb-main-in .elgg-page-body h2 {
       padding-bottom: 0; }
-  #wb-main-in .elgg-menu-page, #wb-main-in .elgg-menu-owner-block {
-    border: 2px solid #DBDBDB; }
-    #wb-main-in .elgg-menu-page li, #wb-main-in .elgg-menu-owner-block li {
-      background: whitesmoke;
-      border-bottom: 2px solid #DBDBDB;
+  #wb-main-in .elgg-menu-page li, #wb-main-in .elgg-menu-owner-block li {
+    background: whitesmoke;
+    border-bottom: 2px solid #DBDBDB;
+    margin: 0; }
+    #wb-main-in .elgg-menu-page li a, #wb-main-in .elgg-menu-owner-block li a {
+      background: transparent;
+      border-radius: 0;
+      padding: .8em 1em;
+      font-family: 'Open Sans', sans-serif;
+      font-size: .875rem;
+      -webkit-transition: background 0.3s ease 0s;
+      transition: background 0.3s ease 0s;
+      text-decoration: underline;
+      position: relative;
       margin: 0; }
-      #wb-main-in .elgg-menu-page li a, #wb-main-in .elgg-menu-owner-block li a {
-        background: transparent;
-        border-radius: 0;
-        padding: .8em 1em;
-        font-family: 'Open Sans', sans-serif;
-        font-size: .875rem;
-        -webkit-transition: background 0.3s ease 0s;
-        transition: background 0.3s ease 0s;
-        text-decoration: none;
-        position: relative;
-        margin: 0; }
-    #wb-main-in .elgg-menu-page li:last-child, #wb-main-in .elgg-menu-owner-block li:last-child {
-      border-bottom: none; }
+  #wb-main-in .elgg-menu-page li:last-child, #wb-main-in .elgg-menu-owner-block li:last-child {
+    border-bottom: none; }
   #wb-main-in form.elgg-form-login input[type="text"] {
     height: auto; }
   #wb-main-in form .text-input {

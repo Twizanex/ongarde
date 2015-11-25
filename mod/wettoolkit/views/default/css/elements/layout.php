@@ -39,7 +39,7 @@
 ul.elgg-menu.elgg-menu-site.elgg-menu-site-default.clearfix {
 	width: 100%;
 	position: relative;
-	top: 0px;
+	top: -1px;
 }
 
 /*---------- Hides default Elgg text in h1 --------- */

@@ -20,17 +20,27 @@ if ($headers) {
 	$section = elgg_extract('section', $vars);
 	echo '<h2>' . elgg_echo("menu:$name:header:$section") . '</h2>';
 }
-
-echo "<ul class=\"$class\">";
+if($vars['link_class']){
+	echo "<div class=\"$class\">";
+}
+else{
+	echo "<ul class=\"$class\">";
+}
 
 if (is_array($items)) {
 	foreach ($items as $menu_item) {
 		echo elgg_view('navigation/menu/elements/item', array(
 			'item' => $menu_item,
 			'item_class' => $item_class,
-			'river_item' => $vars['item']
+			'river_item' => $vars['item'],
+			'link_class' => $vars['link_class']
 		));
 	}
 }
 
-echo '</ul>';
+if($vars['link_class']){
+	echo "</div>";
+}
+else{
+	echo '</ul>';
+}

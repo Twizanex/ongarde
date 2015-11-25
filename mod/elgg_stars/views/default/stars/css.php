@@ -127,7 +127,7 @@ $del_url = elgg_normalize_url('mod/elgg_stars/vendors/rateit/delete.gif');
 
 	.elgg-stars-rating-caption {
 		width: 100%;
-		font-size: 90%;
+		font-size: 1rem;
 		text-align: center;
 	}
 	

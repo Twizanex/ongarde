@@ -23,6 +23,9 @@ if ($children) {
 	$item->addLinkClass($link_class);
 	$item->addLinkClass('elgg-menu-parent');
 }
+if(isset($vars['link_class'])){
+	$item->addLinkClass($vars['link_class']);
+}
 
 $item_class = $item->getItemClass();
 if ($item->getSelected()) {
@@ -46,13 +49,18 @@ if(strpos($item_class,'elgg-menu-item-delete') !== FALSE && strlen($vars['river_
 	}
 }
 else{
-	echo "<li class=\"$item_class\">";
+	if($vars['link_class']){
 		echo $item->getContent();
-		if ($children) {
-			echo elgg_view('navigation/menu/elements/section', array(
-				'items' => $children,
-				'class' => 'elgg-menu elgg-child-menu',
-			));
-		}
-		echo '</li>';
+	}
+	else{
+		echo "<li class=\"$item_class\">";
+			echo $item->getContent();
+			if ($children) {
+				echo elgg_view('navigation/menu/elements/section', array(
+					'items' => $children,
+					'class' => 'elgg-menu elgg-child-menu',
+				));
+			}
+		echo '</li>';	
+	}
 }
