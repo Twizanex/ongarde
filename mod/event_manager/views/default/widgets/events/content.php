@@ -27,7 +27,7 @@
 	}
 	
 	$events = event_manager_search_events($event_options);
-	$content = "<h3 class='widget-header'>".elgg_echo('item:object:event')."</h3>";
+	$content = "<h2 class='mrgn-tp-0'>".elgg_echo('item:object:event')."</h2>";
 	$events_content = elgg_view_entity_list($events['entities'], array("count" => $events["count"], "offset" => 0, "limit" => $num_display, "pagination" => false, "full_view" => false));	
 	
 	if(empty($events_content)){

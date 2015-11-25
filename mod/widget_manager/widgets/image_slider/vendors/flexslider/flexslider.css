@@ -17,8 +17,8 @@
 /* FlexSlider Necessary Styles
 *********************************/ 
 .flexslider {width: 100%; margin: 0 0 15px 0; padding: 0;}
-.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {max-width: 100%; display: block; max-height:412px; margin:0 auto;}
+.flexslider .slides > li {display: none; max-height:512px; overflow-y: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; max-width:1125px; display: block;}
 .flexslider a { text-decoration: none;}
 .flex-pauseplay span {text-transform: capitalize;}
 
@@ -45,7 +45,9 @@ html[xmlns] .slides {display: block;}
 /* IE rgba() hack */
 .flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
-.flex-caption {width: 96%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+.flex-caption {width: 80%; margin:0 auto; padding: 2%; position: absolute; left: 0; right: 0; bottom: 54px; background: rgba(43, 42, 42, 0.55); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+.flex-caption h2{margin-top:0;}
+.flex-caption p{margin-bottom:0;}
 
 /* Direction Nav */
 .flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(theme/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}

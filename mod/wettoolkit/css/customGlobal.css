@@ -1,0 +1,23 @@
+.widget-item {
+  border-bottom: 1px solid #ebebeb;
+  padding: 2.25rem 0; }
+  .widget-item:nth-of-type(1) {
+    padding-top: 0; }
+  .widget-item > div {
+    padding-left: 7.5px;
+    padding-right: 7.5px; }
+    .widget-item > div p:last-child {
+      margin-bottom: 0; }
+
+.elgg-module-widget {
+  margin: 0 .667rem; }
+
+/*
+ * Specific Widget Styles
+ */
+.elgg-widget-instance-free_html h4 {
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center; }
+
+/*# sourceMappingURL=customGlobal.css.map */

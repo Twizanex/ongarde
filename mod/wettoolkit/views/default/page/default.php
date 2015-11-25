@@ -46,12 +46,12 @@ $wettoolkit_url = elgg_get_site_url()."mod/wettoolkit";
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php echo $wettoolkit_url.'/dist/grids/css/util-min.css';?>"/>
 <link rel="stylesheet" href="<?php echo $wettoolkit_url.'/dist/js/css/joyride-2.1.min.css';?>" />
 <link rel="stylesheet" href="<?php echo $wettoolkit_url.'/dist/theme-gcwu-fegc/css/theme-min.css';?>" />
 <link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/base.min.css';?>"/>
 <link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/styles.min.css';?>"/>
 <link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/theme.min.css';?>"/>
+<link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/customGlobal.css';?>"/>
 
 <?php 
 echo elgg_view('page/elements/head', $vars); 
@@ -73,9 +73,9 @@ echo elgg_view('page/elements/head', $vars);
 <nav role="navigation"><div id="gcwu-gcnb"><h2><?=elgg_echo('login:govNavBar')?></h2><div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
 <div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $wettoolkit_url.'/dist/theme-gcwu-fegc/images/sig-eng.svg';?>" role="img" tabindex="-1" aria-label="Government of Canada" type="image/svg+xml"><img src="<?php echo $wettoolkit_url.'/dist/theme-gcwu-fegc/images/sig-eng.png';?>" alt="Government of Canada" /></object></div></div>
 <ul>
-<li id="gcwu-gcnb1"><a rel="external" href="http://www.canada.gc.ca/menu-eng.html">Canada.gc.ca</a></li>
-<li id="gcwu-gcnb2"><a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"><?=elgg_echo('login:services')?></a></li>
-<li id="gcwu-gcnb3"><a rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html"><?=elgg_echo('login:departments')?></a></li>
+<li id="gcwu-gcnb1"><a rel="external" href="http://www.canada.gc.ca/menu-eng.html"></a><?=elgg_echo('ongarde:about')?></li>
+<li id="gcwu-gcnb2"><a rel="external" href="http://www.servicecanada.gc.ca/eng/home.shtml"><?=elgg_echo('ongarde:leadership')?></a></li>
+<li id="gcwu-gcnb3"><a rel="external" href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html"><?=elgg_echo('ongarde:contact')?></a></li>
 
 <li id="gcwu-gcnb-lang">
 

@@ -316,6 +316,7 @@
 .elgg-menu-filter > li > a {
 	text-decoration: none;
 	display: block;
+	line-height: 1;
 	padding: 3px 10px 0;
 	text-align: center;
 	height: 21px;

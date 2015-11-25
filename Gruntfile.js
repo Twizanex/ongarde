@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         files:{
           '<%= pkg.name %>/wettoolkit/css/styles.min.css' : '<%= pkg.name %>/wettoolkit/css/styles.css',
           '<%= pkg.name %>/wettoolkit/css/base.min.css' : '<%= pkg.name %>/wettoolkit/css/base.css',
-          '<%= pkg.name %>/wettoolkit/dist/js/css/joyride-2.1.min.css' : '<%= pkg.name %>/wettoolkit/dist/js/css/joyride-2.1.css'
+          '<%= pkg.name %>/wettoolkit/dist/js/css/joyride-2.1.min.css' : '<%= pkg.name %>/wettoolkit/dist/js/css/joyride-2.1.css',
+          '<%= pkg.name %>/wettoolkit/dist/js/css/customGlobal.min.css' : '<%= pkg.name %>/wettoolkit/dist/js/css/customGlobal.css'
         }
     	}
     },
@@ -29,7 +30,8 @@ module.exports = function(grunt) {
     	build: {
     		files: {
     			'<%= pkg.name %>/wettoolkit/css/styles.css' : '<%= pkg.name %>/wettoolkit/css/styles.scss',
-          '<%= pkg.name %>/wettoolkit/css/base.css' : '<%= pkg.name %>/wettoolkit/css/base.scss'
+                        '<%= pkg.name %>/wettoolkit/css/base.css' : '<%= pkg.name %>/wettoolkit/css/base.scss',
+                        '<%= pkg.name %>/wettoolkit/css/customGlobal.css' : '<%= pkg.name %>/wettoolkit/css/customGlobal.scss'
     		}
     	}
     }

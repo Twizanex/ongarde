@@ -111,16 +111,6 @@
 			<link rel="stylesheet" type="text/css" href="<?php echo $vars['url'];?>mod/widget_manager/widgets/image_slider/vendors/flexslider/flexslider.css"></link>
 			<script	type="text/javascript" src="<?php echo $vars['url'];?>mod/widget_manager/widgets/image_slider/vendors/flexslider/jquery.flexslider-min.js"></script>
 			
-			<style type="text/css">
-				.flex-caption {
-					background: #<?php echo $overlay_color; ?>;
-					filter: alpha(opacity = 70);
-					-moz-opacity: 0.7;
-					-khtml-opacity: 0.7;
-					opacity: 0.7;
-				}
-			</style>
-			
 			<script type="text/javascript">
 			    $(document).ready(function() {
 			    	$('#<?php echo $object_id; ?> .flexslider').flexslider({

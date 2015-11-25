@@ -10,8 +10,6 @@
 	$view_mode_options_values = array(
 		"list" => elgg_echo("blog_tools:widgets:index_blog:view_mode:list"),
 		"preview" => elgg_echo("blog_tools:widgets:index_blog:view_mode:preview"),
-		"slider" => elgg_echo("blog_tools:widgets:index_blog:view_mode:slider"),
-		"simple" => elgg_echo("blog_tools:widgets:index_blog:view_mode:simple")
 	);
 	
 	$noyes_options = array(

@@ -405,7 +405,7 @@ ul.elgg-menu-site{
 	background: -webkit-linear-gradient(#146094,#23447e) !important;
 	height:100% !important;
 	border-bottom: 4px solid #ccc !important;
-	border-top:2px solid #87aec9 !important;
+	border-top:1px solid #87aec9 !important;
 }
 
 #wb-main-in ul.elgg-menu-site > li{
@@ -422,7 +422,7 @@ ul.elgg-menu-site{
 	font-size:16px;
 	/*letter-spacing:.01em;*/
 	font-weight:700;
-	padding:10px 20px !important;
+	padding:.48em .79em !important;
 	height:100%;
 }
 
@@ -474,28 +474,6 @@ ul.elgg-menu-site{
 	}
 
 	/******** TYPOGRAPHY ********/
-	#wb-main-in h1, #wb-main-in h2, #wb-main-in h3, #wb-main-in h4, #wb-main-in h5, #wb-main-in h6{
-		/*font-family: Verdana, Geneva, sans-serif;*/
-
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-weight:700;
-		font-size: 16px;
-		-webkit-font-smoothing: antialiased;
-	}
-
-	#wb-main-in h2.elgg-heading-main{
-
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-		font-size: 18px !important; 
-		color: #333 !important;
-		font-weight: 600 !important;
-
-		/*letter-spacing:.25px;*/
-		line-height:150%;
-		margin-bottom:24px;
-		color:black;
-	}
-
 	#wb-main-in .elgg-breadcrumbs li a{
 		font-weight:500;
 		font-size:1.5em;
@@ -867,11 +845,10 @@ p#language{
 }
 
 .elgg-module-widget > .elgg-body {
-	/*background-color: #f9f9f9 !important; */
-	background-color: #f5f5f5 !important;
-	border: 1px solid #e3e3e3 !important; 
-	border-radius: 4px !important;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.05) !important;
+	background-color: none !important;
+	border: none !important; 
+	border-radius: 0 !important;
+	box-shadow: none !important;
 	
 }
 
