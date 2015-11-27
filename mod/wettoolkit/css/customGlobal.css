@@ -1,3 +1,16 @@
+#wb-main-in > .elgg-page {
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4; }
+
+/*
+ * Generic Widget Styles
+ */
+.widget-content-body > div {
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
+  .widget-content-body > div h2 {
+    margin-bottom: 2.25rem; }
+
 .widget-item {
   border-bottom: 1px solid #ebebeb;
   padding: 2.25rem 0; }
@@ -8,6 +21,25 @@
     padding-right: 7.5px; }
     .widget-item > div p:last-child {
       margin-bottom: 0; }
+    .widget-item > div h3 {
+      line-height: 1.25em; }
+  .widget-item .tags a {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .widget-item .tags {
+    margin-bottom: .667rem; }
+    .widget-item .tags span {
+      font-size: .667rem;
+      vertical-align: middle; }
+
+.article-image {
+  max-height: 120px;
+  overflow-y: hidden; }
+
+.publication .article-image {
+  max-height: 95px; }
 
 .elgg-module-widget {
   margin: 0 .667rem; }
@@ -15,6 +47,9 @@
 /*
  * Specific Widget Styles
  */
+.publication h4 {
+  line-height: 1.5em; }
+
 .elgg-widget-instance-free_html h4 {
   font-weight: 300;
   line-height: 1.4;
@@ -38,5 +73,11 @@
 .elgg-list-entity li h3 {
   margin: 0;
   font-size: 16px; }
+
+/*
+ * Form Styles
+ **/
+.form-control {
+  width: 100%; }
 
 /*# sourceMappingURL=customGlobal.css.map */

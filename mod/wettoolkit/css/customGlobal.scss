@@ -1,6 +1,21 @@
 @charset "utf-8";
 $grey : #ebebeb;
 
+#wb-main-in > .elgg-page{
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+
+/*
+ * Generic Widget Styles
+ */
+.widget-content-body > div{
+    padding-left:7.5px;
+    padding-right:7.5px;
+    h2{
+        margin-bottom:2.25rem;
+    }
+}
 .widget-item{
     border-bottom: 1px solid $grey;
     padding: 2.25rem 0;
@@ -13,7 +28,33 @@ $grey : #ebebeb;
         p:last-child{
             margin-bottom: 0;
         }
+        h3{
+            line-height:1.25em;
+        }
     }
+    
+    .tags a{
+        display:inline-block;
+        font-size:1.125rem;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    
+    .tags{
+        margin-bottom:.667rem;
+        span{
+            font-size:.667rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.article-image{
+    max-height:120px;
+    overflow-y:hidden;
+}
+.publication .article-image{
+    max-height:95px;
 }
 
 .elgg-module-widget{
@@ -23,6 +64,10 @@ $grey : #ebebeb;
 /*
  * Specific Widget Styles
  */
+
+.publication h4{
+    line-height:1.5em;
+}
 .elgg-widget-instance-free_html h4{
     font-weight:300;
     line-height:1.4;
@@ -60,4 +105,11 @@ $grey : #ebebeb;
             font-size:16px;
         }
     }
+}
+
+/*
+ * Form Styles
+ **/
+.form-control{
+    width:100%;
 }

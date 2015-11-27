@@ -234,15 +234,6 @@
   #wb-main-in form .inline-submit {
     width: auto;
     margin-left: 1rem; }
-  #wb-main-in form input[type=text], #wb-main-in form [type='password'], #wb-main-in form [type="file"], #wb-main-in form select, #wb-main-in form textarea {
-    border: 1px solid rgba(153, 153, 153, 0.5);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 0; }
-    #wb-main-in form input[type=text]:hover, #wb-main-in form [type='password']:hover, #wb-main-in form [type="file"]:hover, #wb-main-in form select:hover, #wb-main-in form textarea:hover {
-      border: 1px solid rgba(51, 80, 117, 0.5); }
-    #wb-main-in form input[type=text]:focus, #wb-main-in form [type='password']:focus, #wb-main-in form [type="file"]:focus, #wb-main-in form select:focus, #wb-main-in form textarea:focus {
-      border: 1px solid #335075;
-      background: rgba(255, 255, 255, 0.5); }
   #wb-main-in form label {
     margin-bottom: 6px; }
   #wb-main-in .elgg-river-responses form {
@@ -269,7 +260,7 @@
   #wb-main-in .elgg-module-widget {
     overflow: visible;
     background-color: transparent;
-    margin: 0 .5rem 1.5rem;
+    margin: 0 0 1.5rem;
     padding: 0; }
     #wb-main-in .elgg-module-widget .elgg-button-action {
       margin-bottom: 10px; }

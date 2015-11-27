@@ -476,7 +476,7 @@ ul.elgg-menu-site{
 	/******** TYPOGRAPHY ********/
 	#wb-main-in .elgg-breadcrumbs li a{
 		font-weight:500;
-		font-size:1.5em;
+		font-size:1.5rem;
 	}
 
 	/******** STYLE FORM LABELS ********/
@@ -837,10 +837,6 @@ p#language{
 }
 
 #wb-main-in {
-    border-left: 1px solid #d4d4d4;
-    border-right: 1px solid #d4d4d4;
-     border-bottom: 1px solid #d4d4d4;
-     padding-bottom:0px;
 
 }
 

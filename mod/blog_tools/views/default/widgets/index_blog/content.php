@@ -53,15 +53,15 @@
 		);
 	}
 	echo "<section class='widget-content-body'>"
-		 . "<h2 class='mrgn-tp-0'>" . elgg_echo('ongarde:newsroom') . "</h2>";
+		 . "<div class='col-lg-12'><h2 class='mrgn-tp-0'>" . elgg_echo('ongarde:newsroom') . "</h2></div>";
 	if($blogs = elgg_get_entities_from_metadata($options)) {
 			foreach($blogs as $blog){
 				echo "<article class='widget-item blog clearfix'>
-						<div class='col-md-4 col-sm-4'>
+						<div class='col-md-4 col-sm-4 article-image'>
 							<img src=".$blog->getIconURL('large')." class='img-responsive'/>
 						</div>
 						<div class='col-md-8 col-sm-8'>
-							<h3 class='mrgn-tp-0'>".$blog->title."</h3>
+							<h3 class='mrgn-tp-0'><a href=''>".$blog->title."</a></h3>
 							<p>$blog->description</p>
 						</div>
 					</article>";
