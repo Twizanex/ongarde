@@ -26,7 +26,7 @@ function publications_init() {
 	elgg_register_page_handler("publicationsicon", "publications_icon_handler");
 
 	// Register a url handler
-	//elgg_register_entity_url_handler('object', 'publication', 'publications_url');
+	elgg_register_entity_url_handler('object', 'publication', 'publication_url_handler');
 
 	// Register some actions
 	$action_base = elgg_get_plugins_path() . 'publications/actions';
@@ -161,4 +161,15 @@ function publications_icon_hook($hook, $entity_type, $returnvalue, $params) {
 			}
 		}
 	}
+}
+
+function publication_url_handler($entity) {
+	if (!$entity->getOwnerEntity()) {
+		// default to a standard view if no owner.
+		return FALSE;
+	}
+
+	$friendly_title = elgg_get_friendly_title($entity->title);
+
+	return "publications/view/{$entity->guid}/$friendly_title";
 }

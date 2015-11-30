@@ -6,14 +6,38 @@ $grey : #ebebeb;
     border-right: 1px solid #d4d4d4;
 }
 
+.button{
+    display:inline-block;
+    padding:1rem;
+    background:#AD3939;
+    color:#fff !important;
+    text-transform: uppercase;
+    font-size:14px;
+    letter-spacing:1px;
+    webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.button:hover{
+    text-decoration: none;
+    background-color:#323232;
+    color:#fff !important;
+}
+
+.col-centered{
+    float:none;
+    margin:0 auto;
+}
 /*
  * Generic Widget Styles
  */
-.widget-content-body > div{
+.widget-content-body > div, .widget-wrapper{
     padding-left:7.5px;
     padding-right:7.5px;
     h2{
-        margin-bottom:2.25rem;
+        margin-bottom:1.5rem;
     }
 }
 .widget-item{
@@ -42,9 +66,11 @@ $grey : #ebebeb;
     
     .tags{
         margin-bottom:.667rem;
+        line-height:14px;
         span{
             font-size:.667rem;
             vertical-align: middle;
+            color:#295376;
         }
     }
 }
@@ -72,6 +98,28 @@ $grey : #ebebeb;
     font-weight:300;
     line-height:1.4;
     text-align:center;
+}
+
+.elgg-widget-instance-events h5{
+    font-size:18px;
+}
+
+.contact-us{
+    border: 2.25rem solid #dddbdb;
+    padding: 1.5rem;
+    clear: both;
+    background: #04213f;
+    color:#fff;
+    text-align: center;
+        h2{
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-bottom:0px;
+        }
+        .button{
+            margin-top:2.25rem;
+        }
 }
 
 /*

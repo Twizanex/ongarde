@@ -34,7 +34,7 @@ if (elgg_in_context('widgets') || $revision) {
 }
 
 if ($full) {
-	$body = elgg_view('output/longtext', array('value' => $annotation->value));
+	$body = elgg_view('output/longtext', array('value' => $publication->description));
 
 	$params = array(
 		'entity' => $publication,

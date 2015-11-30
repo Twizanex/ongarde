@@ -414,3 +414,10 @@
 	);
 	add_translation("en", $favorites);
 	
+	$contact = array(
+		"widgets:contact" => "Contact Us",
+		"widgets:contact:body" => "Bacon ipsum dolor amet meatball corned beef chuck flank fugiat deserunt ground round et sed dolore non.",
+		"widgets:contact:button" => "Contact"
+	);
+	add_translation("en", $contact);
+	

@@ -88,6 +88,17 @@
 	//$content = "<div class='alert alert-warning'>{$notice}</div>";
 	$content = elgg_view_layout('widgets', $params);
 
+	//contact us
+	$content .= "<section class='col-md-8 col-centered widget-content-body contact-us clearfix'>
+					<div id='contact-container'>
+						<div class='col-sm-10 col-centered'>
+							<h2 class='mrgn-tp-0'>".elgg_echo('widgets:contact')."</h2>
+							<p>".elgg_echo('widgets:contact:body')."</p>
+							<p><a href='mailto:test@forces.gc.ca' class='button'>".elgg_echo('widgets:contact:button')."</a></p>
+						</div>
+					</div>
+				</section>";
+	
 	//feeature tour via Jquery joyride plugin
 	$content .= "<ol id='joyRideTipContent'>
       <li data-class='elgg-widget-instance-your_network' data-text='".elgg_echo('widget_manager:widgets:next')."' data-options='tipLocation:right;tipAnimation:fade'>

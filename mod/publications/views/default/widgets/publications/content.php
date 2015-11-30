@@ -28,10 +28,10 @@ if ($publications) {
 						$end = end($publication->tags);
 						foreach($publication->tags as $tag) {
 							if($tag == $end) {
-								echo "<a href=''>".$tag."</a>";
+								echo "<a href='search?q={$tag}&search_type=tags'>".$tag."</a>";
 							}
 							else{
-								echo "<a href=''>".$tag."</a> <span>&#9899</span> ";
+								echo "<a href='search?q={$tag}&search_type=tags'>".$tag."</a> <span>&#9899</span> ";
 							}
 						}
 					echo "</div>

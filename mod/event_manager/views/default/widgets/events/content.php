@@ -27,7 +27,7 @@
 	}
 	
 	$events = event_manager_search_events($event_options);
-	$content = "<h2 class='mrgn-tp-0'>".elgg_echo('item:object:event')."</h2>";
+	$content = "<div class='col-md-12 widget-wrapper'><h2 class='mrgn-tp-0'>".elgg_echo('item:object:event')."</h2>";
 	$events_content = elgg_view_entity_list($events['entities'], array("count" => $events["count"], "offset" => 0, "limit" => $num_display, "pagination" => false, "full_view" => false));	
 	
 	if(empty($events_content)){
@@ -55,5 +55,6 @@
 						" ". elgg_view("output/url", array("text"=> elgg_echo('event_manager:group:more'), "href"=>$more_link, "class"=>"push-right")) ."</div>";
 		}
 	}
+	$content .= "</div>";
 	
 	echo $content;

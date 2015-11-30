@@ -161,9 +161,6 @@ body {
 }
 /*------------------------------CHANGE CSS IN THIS FILE ONLY-----------------------------------------------------*/
 /*------- Change the color of all anchors in the body ------*/
-.elgg-body a {
-	color: #1D63A3;
-}
 ul.elgg-list.elgg-list-entity > li:hover {
 	background: white;
 }
@@ -238,10 +235,6 @@ a.elgg-menu-closed.elgg-menu-parent {
 
 
 /*----------*/
-
-#wb-main-in a:visited, #wb-main-in a.ui-link:visited {
-color: black;
-}
 
 .elgg-menu-site-default > li > a {
 color: white !important;
@@ -362,10 +355,6 @@ a.elgg-button.elgg-button-delete {
 /******** CDA LT CUSTOM STYLES *******/
 #wb-core-in{
 	padding:0;
-}
-
-#wb-main-in a:visited, #wb-main-in a.ui-link:visited{
-	color:#1D63A3;
 }
 
 	/******** Forum Plugin ********/

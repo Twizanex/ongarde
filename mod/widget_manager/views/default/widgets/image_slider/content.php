@@ -115,8 +115,8 @@
 			    $(document).ready(function() {
 			    	$('#<?php echo $object_id; ?> .flexslider').flexslider({
 			    		slideshowSpeed: <?php echo $seconds_per_slide * 1000; ?>,
-			    		prevText: "<?php echo elgg_echo("previous");?>",           
-			    		nextText: "<?php echo elgg_echo("next");?>", 
+			    		prevText: "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>",           
+			    		nextText: "<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>", 
 						pauseOnHover: true,
 
 			    		<?php 
