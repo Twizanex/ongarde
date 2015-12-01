@@ -243,7 +243,7 @@ elgg.register_hook_handler('init', 'system', function() {
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="shortcut icon" href="<?php echo $wettoolkit_url.'/dist/theme-gcwu-fegc/images/favicon.ico';?>" />
 
-<link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/theme.min.css';?>"/>
+<link rel="stylesheet" href="<?php echo $wettoolkit_url.'/css/theme.alt.min.css';?>"/>
 
 </head>
 	<header role="banner">
@@ -256,7 +256,7 @@ elgg.register_hook_handler('init', 'system', function() {
 	<h1 class="wb-inv">Language selection - Web Experience Toolkit / <span lang="fr">Sélection de la langue - Boîte à outils de l’expérience Web</span></h1>
 
 	<section class="col-md-6" style="box-sizing: border-box;">
-			<h2 class="h3 text-center">DLN Learning Portal</h2>
+			<h2 class="h3 text-center">National Security Network</h2>
 			<ul class="list-unstyled">
 					<li><a class="btn btn-lg btn-primary btn-block" href=".?lang=en" style="width:auto;color:#fff!important;">English</a></li>
 					<li><a class="btn btn-lg btn-default btn-block mrgn-tp-sm" href="http://www.forces.gc.ca/en/terms-conditions.page" rel="license" style="width:auto;">Terms and conditions of use</a></li>
